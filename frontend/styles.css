@@ -90,11 +90,45 @@ body {
 /***** NAVBAR *****/
 
 .navbar {
-    background-color: yellow;
+    /* background-color: #E7F6F2; */
+    background-color: white;
     height: 100px;
+
 }
 
+.nav-item {
+    padding: 0 18px;
+  }
+  
+  .nav-link {
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+  }
 
+
+
+
+#overview {
+    background-color: #395B64;
+}
+
+#speakers {
+    background-color:  #E7F6F2;
+}
+
+#program {
+    background-color: #395B64;
+
+}
+
+#host {
+    background-color:  #E7F6F2;
+}
+
+#contact {
+    background-color: #395B64;
+
+}
 
 /***** MEDIA QUERIES ******/
 
@@ -120,6 +154,18 @@ body {
 
     .main-text {
         font-size: 1.1rem; 
+    }
+
+    .navbar-nav {
+        display: block;
+    }
+
+    .navbar {
+        height: 400px;
+    }
+
+    .nav-link {
+        font-size: 2rem;
     }
 }
 

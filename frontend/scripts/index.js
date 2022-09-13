@@ -25,6 +25,7 @@ function initializeTimer(id, endtime) {
     const minutesSpan = timer.querySelector(".minutes");
     const secondsSpan = timer.querySelector(".seconds");
 
+
     function updateTimer() {
         const t = getTimeRemaining(endtime);
 
@@ -44,3 +45,21 @@ function initializeTimer(id, endtime) {
 
 const summmitTime = new Date("October 14, 2022 09:00:00").getTime();
 initializeTimer("countdown-timer", summmitTime);
+
+
+// STICKY-TOP NAVIGATION BAR
+
+document.addEventListener("DOMContentLoaded", function(){
+    window.addEventListener('scroll', function() {
+        if ((window.scrollY > 700) && (window.matchMedia("(min-width: 1045px)").matches)) {
+          document.querySelector('.navbar').classList.add('fixed-top');
+          // add padding top to show content behind navbar
+          navbar_height = document.querySelector('.navbar').offsetHeight;
+          document.body.style.paddingTop = navbar_height + 'px';
+        } else {
+          document.querySelector('.navbar').classList.remove('fixed-top');
+           // remove padding top from body
+          document.body.style.paddingTop = '0';
+        } 
+    });
+  }); 
