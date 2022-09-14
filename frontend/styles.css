@@ -1,5 +1,6 @@
 body {
     text-align: center;
+    background-color: #E7F6F2;
 }
 
 /********** MAIN SECTION *********/
@@ -10,7 +11,7 @@ body {
     background-size: cover;
     height: 100vh;
     padding: 25% 23% 15%;
-    color: #2C3333; 
+    color: #E7F6F2; 
 }
 
 .main-heading {
@@ -34,30 +35,32 @@ body {
 #countdown-timer > div {
     padding: 8px;
     border-radius: 3px;
-    background-color: #A5C9CA;
+    background-color: #E7F6F2;
     display: inline-block;
+    opacity: 80%;
+    color: #2C3333;
 }
 
 #countdown-timer div > span {
     padding: 15px;
     border-radius: 3px;
-    background-color: #395B64;
+    background-color: #2C3333;
     display: inline-block;
     font-size: 1rem;
     color: #E7F6F2;
-
 }
 
 
-.registration-btn {
+.registration-btn, .submit-btn {
     background-color: #2C3333;
     color: #E7F6F2;
     margin: 5%;
     padding: 2% 5%;
     letter-spacing: 0.3rem;
+    border-color: #E7F6F2;
 }
 
-.registration-btn:hover {
+.registration-btn:hover, .submit-btn:hover {
     box-shadow: 2px 2px 15px black;
 }
 
@@ -66,6 +69,14 @@ body {
     color: #E7F6F2;
 
 }
+
+.speaker {
+    background-color: #A5C9CA;
+    border-color: #E7F6F2;
+    border-style: solid;
+    padding: 3% 15%;
+}
+
 
 /****** REGISTRATION PAGE *********/
 
@@ -77,12 +88,20 @@ body {
     margin: 0;
 }
 
+
+.btn-to-home > a {
+    text-decoration: none;
+    color: #E7F6F2;
+}
+
+
 .registration-input {
     margin-top: 5%;
     font-size: 1rem; 
     padding: 1%;
     width: 350px;
     margin: 1%;
+    
 }
 
 
@@ -92,7 +111,7 @@ body {
 .navbar {
     /* background-color: #E7F6F2; */
     background-color: white;
-    height: 100px;
+    height: 70px;
 
 }
 
@@ -106,27 +125,40 @@ body {
   }
 
 
-
+/******** MAIN CONTENT *********/
 
 #overview {
     background-color: #395B64;
+    color: #E7F6F2;
+    padding: 5% 15%;
 }
 
 #speakers {
     background-color:  #E7F6F2;
+    color: #395B64;
+    padding: 5% 15%;
 }
 
 #program {
     background-color: #395B64;
-
+    color: #E7F6F2;
+    padding: 5% 15%;
 }
 
 #host {
     background-color:  #E7F6F2;
+    color: #395B64;
+    padding: 5% 15%;
+}
+
+#host-info {
+    padding-top: 20%;
 }
 
 #contact {
     background-color: #395B64;
+    color: #E7F6F2;
+    padding: 5% 15%;
 
 }
 
@@ -175,3 +207,5 @@ body {
         padding: 25% 12% 15%;
     }
 }
+
+

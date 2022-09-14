@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/947e6fb6f8.js" crossorigin="anonymous"></script>
+    
     <link rel="stylesheet" href="styles.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     
@@ -51,23 +54,29 @@
         <nav class="navbar navbar-expand">
             <div class="collapse navbar-collapse justify-content-center">
             <ul class="navbar-nav">
+                
                 <li class="nav-item">
-                <a class="nav-link" href="#overview">OVERVIEW</a>
+                    <a class="nav-link" href="#main-section">REGISTER</a>
                 </li>
+
                 <li class="nav-item">
-                <a class="nav-link" href="#speakers">SPEAKERS</a>
+                    <a class="nav-link" href="#overview">OVERVIEW</a>
                 </li>
+
                 <li class="nav-item">
-                <a class="nav-link" href="#program">PROGRAM</a>
+                    <a class="nav-link" href="#speakers">SPEAKERS</a>
                 </li>
+
                 <li class="nav-item">
-                <a class="nav-link" href="#host">HOST</a>
+                    <a class="nav-link" href="#program">PROGRAM</a>
                 </li>
+
                 <li class="nav-item">
-                <a class="nav-link" href="registration.html">REGISTER</a>
+                    <a class="nav-link" href="#host">HOST</a>
                 </li>
+
                 <li class="nav-item">
-                <a class="nav-link" href="#contact">CONTACT</a>
+                    <a class="nav-link" href="#contact">CONTACT</a>
                 </li>
             </ul>
             </div>
@@ -92,6 +101,25 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil et veniam sed, ratione at ipsa beatae quibusdam natus quis alias blanditiis amet impedit, ab neque reprehenderit ipsam, voluptas aperiam nemo?
             Iure magnam minima vel velit! Ex saepe maiores rerum omnis velit, inventore dolor, quaerat sit sapiente perspiciatis quis, nobis blanditiis fugiat voluptatibus voluptas maxime ducimus consequuntur ullam illo? Incidunt, nostrum!
             Corporis quos blanditiis tempora. Laborum dignissimos iusto natus tenetur nam nesciunt sit quo, odit architecto quas sint soluta et. Optio culpa voluptatum, neque earum rerum in veniam eos facere provident?</p>
+
+            <div class="row">
+                <div class="col-md-4 speaker">First</div>
+                <div class="col-md-4 speaker">Second</div>
+                <div class="col-md-4 speaker">Third</div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 speaker">Fourth</div>
+                <div class="col-md-4 speaker">Fifth</div>
+                <div class="col-md-4 speaker">Sixth</div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 speaker">Seventh</div>
+                <div class="col-md-4 speaker">Eighth</div>
+                <div class="col-md-4 speaker">Nineth</div>
+            </div>
+
         </div>
     </section>
 
@@ -108,11 +136,18 @@
 
 <!-- Host section -->
         <section id="host">
-            <div class="container">
-                <h2>Host</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil et veniam sed, ratione at ipsa beatae quibusdam natus quis alias blanditiis amet impedit, ab neque reprehenderit ipsam, voluptas aperiam nemo?
-                Iure magnam minima vel velit! Ex saepe maiores rerum omnis velit, inventore dolor, quaerat sit sapiente perspiciatis quis, nobis blanditiis fugiat voluptatibus voluptas maxime ducimus consequuntur ullam illo? Incidunt, nostrum!
-                Corporis quos blanditiis tempora. Laborum dignissimos iusto natus tenetur nam nesciunt sit quo, odit architecto quas sint soluta et. Optio culpa voluptatum, neque earum rerum in veniam eos facere provident?</p>
+            <div class="container row">
+                <div class="col-md-6">
+                    <h2>Host</h2>
+                
+                    <p id="host-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil et veniam sed, ratione at ipsa beatae quibusdam natus quis alias blanditiis amet impedit, ab neque reprehenderit ipsam, voluptas aperiam nemo?
+                    Iure magnam minima vel velit! Ex saepe maiores rerum omnis velit, inventore dolor, quaerat sit sapiente perspiciatis quis, nobis blanditiis fugiat voluptatibus voluptas maxime ducimus consequuntur ullam illo? Incidunt, nostrum!
+                    Corporis quos blanditiis tempora. Laborum dignissimos iusto natus tenetur nam nesciunt sit quo, odit architecto quas sint soluta et. Optio culpa voluptatum, neque earum rerum in veniam eos facere provident?</p>
+                   </div>
+                <div class="col-md-6">
+                    <img src="pics/thehost.png" alt="" class="container w-60 p-3">
+                </div>
+
             </div>
         </section>
 
@@ -120,10 +155,17 @@
 <section id="contact">
     <div class="container">
         <h2>Ask us</h2>
+
         <form action="#">
-            <input type="email" placeholder="Your email address"><br>
-            <input type="textarea" placeholder="Leave your question here"><br>
-            <button type="submit">submit</button>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"></label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your email address">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"></label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Question"></textarea>
+              </div>
+              <button type="submit" class="submit-btn">SUBMIT</button>
         </form>
     </div>
 </section>
