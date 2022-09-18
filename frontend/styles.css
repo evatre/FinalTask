@@ -137,6 +137,19 @@ body {
   padding: 5% 15%;
 }
 
+#program-carousel {
+  padding: 3rem;
+}
+
+.program-day {
+  font-weight: 250;
+}
+
+.program-content {
+  padding-top: 2rem;
+  font-weight: 250;
+}
+
 #host {
   background-color: #e7f6f2;
   color: #395b64;
