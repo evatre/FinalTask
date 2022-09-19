@@ -3,6 +3,10 @@ body {
   background-color: #e7f6f2;
 }
 
+h2 {
+  padding-bottom: 7%;
+}
+
 /********** MAIN SECTION *********/
 
 #main-section {
@@ -68,13 +72,6 @@ body {
   color: #e7f6f2;
 }
 
-.speaker {
-  background-color: #a5c9ca;
-  border-color: #e7f6f2;
-  border-style: solid;
-  padding: 3% 15%;
-}
-
 /****** REGISTRATION PAGE *********/
 
 .btn-to-home {
@@ -131,6 +128,21 @@ body {
   padding: 5% 15%;
 }
 
+#all-speakers {
+  padding-top: 5%;
+}
+
+.speaker {
+  background-color: #a5c9ca;
+  border-color: #e7f6f2;
+  border-style: solid;
+  text-align: center;
+}
+
+.about-speaker {
+  min-width: 200px;
+}
+
 #program {
   background-color: #395b64;
   color: #e7f6f2;
@@ -138,16 +150,16 @@ body {
 }
 
 #program-carousel {
-  padding: 3rem;
+  padding: 1rem;
 }
 
-.program-day {
-  font-weight: 250;
+.speaker-pic {
+  width: 10%;
+  border-radius: 100%;
 }
 
 .program-content {
   padding-top: 2rem;
-  font-weight: 250;
 }
 
 #host {
