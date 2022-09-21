@@ -23,42 +23,49 @@
 
     <link rel="stylesheet" href="styles.css" />
     <script
-      src="https://code.jquery.com/jquery-3.6.0.js"
-      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-      crossorigin="anonymous"
-    ></script>
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"
+  ></script>
+    
     <title>Movie summit 2022</title>
   </head>
 
   <body>
+    <button class="btn btn-dark btn-to-home">
+      <a href="/"
+        ><i class="fa-solid fa-house"></i> BACK TO HOME
+      </a>
+    </button>
+
     <div class="d-flex align-items-center" id="main-section">
-      <div class="container">
+      <div class="container registration-text">
         <p class="main-text">
           THE SUMMIT KICKS OFF ON FRIDAY, <strong>OCTOBER 14TH</strong> <br />
           <em>and can be attended from the comfort of your own home.</em>
         </p>
 
-        <form action="#">
+        <form id="registration-form">
           <input
             class="registration-input"
+            id="firstName"
             type="text"
+            name="firstName"
             placeholder="YOUR NAME"
           />
           <input
             class="registration-input"
+            id="email"
             type="email"
+            name="email"
             placeholder="YOUR EMAIL ADDRESS"
+            required
           /><br />
           <button class="registration-btn" type="submit">REGISTER NOW</button>
         </form>
-        <button class="btn btn-dark btn-to-home">
-          <a href="index.html"
-            ><i class="fa-solid fa-house"></i> BACK TO HOME
-          </a>
-        </button>
       </div>
     </div>
-
+   
     <script src="scripts/index.js"></script>
   </body>
 </html>

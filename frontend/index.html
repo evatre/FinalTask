@@ -42,9 +42,9 @@
                     <span class="seconds"></span>
                     <div>seconds</div>
                 </div>
-        </div>
+            </div>
 
-            <button class="registration-btn"> <a href="registration.html">REGISTER NOW FOR FREE </a></button>
+            <button class="registration-btn"> <a href="/registration">REGISTER NOW FOR FREE </a></button>
         </div>
 
     </section>
@@ -90,7 +90,7 @@
             <h2>Overview</h2>
             <p>The Movie Online Summit features an all-star line-up of widely respected industry professionals. Each topic features a conversation-style interview with our host, Arturs. Register for free and show up with an open-heart and an open-mind. Take notes if you want, or don’t. Watch the video from your computer, or listen while you’re on the go and keeping up with the kids. It costs nothing to attend and offers more value than we could even begin to assign a true dollar amount to. </p>
 
-            <button class="registration-btn"> <a href="registration.html">REGISTER NOW FOR FREE </a></button>
+            <button class="registration-btn"> <a href="/registration">REGISTER NOW FOR FREE </a></button>
         </div>
     </section>
 
@@ -156,16 +156,16 @@
     <div class="container">
         <h2>Ask us</h2>
 
-        <form action="#">
+        <form id="question-form">
             <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label"></label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your email address">
+                <label for="ask-us-email" class="form-label"></label>
+                <input type="email" class="form-control" id="ask-us-email" name="askUsEmail" placeholder="Your email address" required>
               </div>
               <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label"></label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Question"></textarea>
+                <label for="question-box" class="form-label"></label>
+                <textarea class="form-control" id="question-box" rows="3" name="question" placeholder="Question" required></textarea>
               </div>
-              <button type="submit" class="submit-btn">SUBMIT</button>
+              <button class="submit-btn" type="submit">SUBMIT</button>
         </form>
     </div>
 </section>
