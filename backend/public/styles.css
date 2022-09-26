@@ -178,6 +178,24 @@ h2 {
   padding: 5% 15%;
 }
 
+#contacts {
+  text-align: left;
+}
+
+.social {
+  padding-right: 1rem;
+  color: #e7f6f2;
+}
+
+.social:hover {
+  color: #a5c9ca;
+}
+
+#copyright {
+  text-align: right;
+}
+
+
 /***** MEDIA QUERIES ******/
 
 @media (max-width: 1045px) {
