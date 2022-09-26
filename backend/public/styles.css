@@ -143,19 +143,51 @@ h2 {
   min-width: 200px;
 }
 
+.smaller {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+
+.carousel-text {
+  padding-left: 0%;
+  padding-top: 2rem;
+  text-align: left;
+  padding-bottom: 2rem;
+}
+
+.one-speaker {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+
 #program {
   background-color: #395b64;
   color: #e7f6f2;
   padding: 5% 15%;
 }
 
+.program-day {
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+}
+
+.program-theme {
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+}
+
+
 #program-carousel {
   padding: 1rem;
 }
 
 .speaker-pic {
-  width: 10%;
+  width: 50%;
   border-radius: 100%;
+  margin-left: 2rem;
+  margin-top: 2rem;
 }
 
 .program-content {
