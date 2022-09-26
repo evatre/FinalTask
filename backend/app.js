@@ -1,5 +1,6 @@
 const express = require('express'); 
 const path = require("path");
+
 const app = express();
 app.use(express.urlencoded());
 app.use(express.static("public"));
@@ -31,13 +32,13 @@ app.post("/", (req, res) => {
         question: req.body.question
     };
 
-    const sqlQuery = "INSERT INTO questions (email, question) VALUES ('" + question.email + "' , '" + question.question + "')";
-    connection.query(sqlQuery, (error, results) => {
+    const sqlQuery = "INSERT INTO questions (email, question) VALUES (?, ?)";
+    connection.query(sqlQuery, [question.email, question.question], (error, results) => {
         if (error) throw error;
         console.log("Question submitted! ID: " + results.insertId);
-        res.send(JSON.stringify({
+        res.send(({
             "status": 200,
-            "error": null
+            "error": null,
         }))
     
     })
@@ -45,26 +46,31 @@ app.post("/", (req, res) => {
 
 
 app.post("/registration", (req, res) => {
-    console.log("Works")
     const participant = {
         firstname: req.body.firstName,
         email: req.body.email
     };
 
-    const sqlQuery = "INSERT INTO participants (firstname, email) VALUES ('" + participant.firstname + "' , '" + participant.email + "')";
-    connection.query(sqlQuery, (error, results) => {
-        if (error) throw error;
-        // TODO
-        // res.send, status: 500??, 
+    const sqlQuery = "INSERT INTO participants (firstname, email) VALUES (?, ?)";
+    connection.query(sqlQuery, [participant.firstname,participant.email], (error, results) => {
+        if (error) {
+            if (error.code == "ER_DUP_ENTRY") {
+                res.status(500).json({
+                    "success": false,
+                    "message": "This email is already registered!"
+                })} else {
+                    throw error
+                }
+        } else {
         console.log("Added! Participant ID: " + results.insertId);
         res.send(JSON.stringify({
             "status": 200,
             "error": null,
             "response": {firstname: participant.firstname }
         }))
-    
+    }
     })
-});
+    });
 
 
 app.listen(5000, function() {

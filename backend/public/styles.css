@@ -89,12 +89,19 @@ h2 {
   color: #e7f6f2;
 }
 
+
 .registration-input {
   margin-top: 5%;
   font-size: 1rem;
   padding: 1%;
   width: 350px;
   margin: 1%;
+}
+
+#email-error-msg {
+  color: #D2001A;
+  font-weight: 600;
+  height: 0.1rem;
 }
 
 /***** NAVBAR *****/

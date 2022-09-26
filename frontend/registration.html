@@ -32,11 +32,11 @@
   </head>
 
   <body>
+    <a href="/">
     <button class="btn btn-dark btn-to-home">
-      <a href="/"
-        ><i class="fa-solid fa-house"></i> BACK TO HOME
-      </a>
+      <i class="fa-solid fa-house"></i> BACK TO HOME
     </button>
+  </a>
 
     <div class="d-flex align-items-center" id="main-section">
       <div class="container registration-text">
@@ -60,7 +60,9 @@
             name="email"
             placeholder="YOUR EMAIL ADDRESS"
             required
-          /><br />
+          />
+          <br />
+        <div id="email-error-msg"></div>
           <button class="registration-btn" type="submit">REGISTER NOW</button>
         </form>
       </div>

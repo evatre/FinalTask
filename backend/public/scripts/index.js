@@ -53,13 +53,8 @@ $(window).scroll(function () {
       window.matchMedia("(min-width: 1045px)").matches
     ) {
       $(".navbar").addClass("fixed-top");
-      // add padding top to show content behind navbar
-      navbar_height = $(".navbar").offsetHeight;
-      document.body.style.paddingTop = -navbar_height + "px";
     } else {
       $(".navbar").removeClass("fixed-top");
-      // remove padding top from body
-      document.body.style.paddingTop = "0";
     }
   });
 
@@ -78,14 +73,20 @@ $("#registration-form").submit(function(e) {
     data: dataString,
     success: function(data) {
       const parsed = JSON.parse(data);
+      console.log(parsed);
       let name = parsed.response.firstname;
       let text = `Thank you${name ? ", "  + name : ""}. Your application has been submitted. See you at the summit!`
       $(".registration-text").html("<h3>" + text + "</h3>");  
   },
     error: function(err) {
-      // if error.status=500?
-      let text = "Oh oh! Something went wrong!";
-      $(".registration-text").html("<h3>" + text + "</h3>"); 
+      if (err.status = 500) {
+        let text = "You have already been registered!";
+        $("#email-error-msg").html(text); 
+  
+      } else {
+        let text = "Oh oh! Something went wrong!";
+        $(".registration-text").html("<h3>" + text + "</h3>");   
+      }
     }
       })
   })
@@ -109,9 +110,9 @@ $("#question-form").submit(function(e) {
       $("#ask-us-email").val("");
 
   },
-    error: function(err) {
-      // todo - what happens on error
-      
+    error: function() {
+      let text = "Oh oh! Something went wrong!";
+      $(".confirmation-text").html("<h4>" + text + "</h4>")
     }
       })
   })
