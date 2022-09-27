@@ -80,7 +80,7 @@ $("#registration-form").submit(function(e) {
   },
     error: function(err) {
       if (err.status = 500) {
-        let text = "You have already been registered!";
+        let text = "This email has already been registered!";
         $("#email-error-msg").html(text); 
   
       } else {
