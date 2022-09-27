@@ -220,6 +220,11 @@ h2 {
 
 #contacts {
   text-align: left;
+  
+}
+
+.more-padding {
+  padding-top: 2rem;
 }
 
 .social {
@@ -233,6 +238,7 @@ h2 {
 
 #copyright {
   text-align: right;
+  padding-top: 1rem;
 }
 
 
