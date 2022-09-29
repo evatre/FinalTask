@@ -101,14 +101,14 @@ h2 {
 #email-error-msg {
   color: #ffffff;
   font-weight: 600;
-  /* height: 0.1rem; */
-  background-color: rgb(251, 120, 120);
+  width: 20rem;
+  margin: auto;
+  background-color: #FB7878;
 }
 
 /***** NAVBAR *****/
 
 .navbar {
-  /* background-color: #E7F6F2; */
   background-color: white;
   height: 70px;
 }
